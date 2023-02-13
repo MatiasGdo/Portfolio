@@ -4,8 +4,9 @@
 
     --fondo-body: #2C2C2C;
     --fondo-header: #232323;
+    --fondo-header-sec: #1a1a1a;
 
-    --blanco: #ffffff;
+    --blanco: #c6c6c6;
 }
 
 html {
@@ -18,15 +19,46 @@ html {
 }
 
 header {
+    display: flex;
+    flex-direction: column;
+
     font-family: var(--fuenteHeading);
     background-color: var(--fondo-header);
     color: var(--blanco);
-    border-bottom: 2px solid var(--blanco);
 }
 
 header h1 {
-    padding: 1rem;
-    margin-left: 3rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+
+    border-left: 1px solid var(--blanco);
+    border-top: 1px solid var(--blanco);
+    border-right: 1px solid var(--blanco);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    padding: 0.5rem;
+    width: 100%;
+    
+    border: 1px solid var(--blanco);
+
+    text-align: center;
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+header nav .main {
+    border-top: 0;
+    border-bottom: 2px solid var(--blanco);
+}
+
+header nav .sec {
+    background-color: var(--fondo-header-sec);
 }
 
 body {
