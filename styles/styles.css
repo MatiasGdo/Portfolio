@@ -1,6 +1,40 @@
-* {
-    border: 0;
-    padding: 0;
-    
-    font-family: 'Courier New', Courier, monospace;
+:root {
+    --fuenteHeading: 'Courier New', Courier, monospace;
+    --fuenteParrafos: 'Courier New', Courier, monospace;
+
+    --fondo-body: #2C2C2C;
+    --fondo-header: #232323;
+
+    --blanco: #ffffff;
 }
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */
+}
+*, *:before, *:after {
+    margin: 0;
+    box-sizing: inherit;
+}
+
+header {
+    font-family: var(--fuenteHeading);
+    background-color: var(--fondo-header);
+    color: var(--blanco);
+    border-bottom: 2px solid var(--blanco);
+}
+
+header h1 {
+    padding: 1rem;
+    margin-left: 3rem;
+}
+
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+
+    background-color: var(--fondo-body);
+}
+
+
