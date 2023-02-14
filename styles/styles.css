@@ -3,6 +3,7 @@
     --fuenteParrafos: 'Courier New', Courier, monospace;
 
     --fondo-body: #2C2C2C;
+    --fondo-body-sec: #232323;
     --fondo-header: #232323;
     --fondo-header-sec: #1a1a1a;
 
@@ -68,6 +69,16 @@ body {
     line-height: 2;
 
     background-color: var(--fondo-body);
+}
+body main {
+    margin: 3rem;
+    margin-top: 4rem;
+
+    height: 30rem;
+
+    border: 2px solid var(--blanco);
+    border-radius: 0.8rem;
+    background-color: var(--fondo-body-sec);
 }
 
 
