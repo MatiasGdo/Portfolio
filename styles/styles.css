@@ -2,12 +2,14 @@
     --fuenteHeading: 'Courier New', Courier, monospace;
     --fuenteParrafos: 'Courier New', Courier, monospace;
 
-    --fondo-body: #2C2C2C;
+    --fondo-body: #6c6c6c;
     --fondo-body-sec: #232323;
     --fondo-header: #232323;
     --fondo-header-sec: #1a1a1a;
 
-    --blanco: #c6c6c6;
+    --blanco: #ffffff;
+    --blanco-sec: #bababa;
+    --negro: #000000;
 }
 
 html {
@@ -20,20 +22,27 @@ html {
 }
 
 header {
+    position:fixed;
+    left: 7%;
+    right: 7%;
+    top: 0;
+
     display: flex;
     flex-direction: column;
 
     font-family: var(--fuenteHeading);
     color: var(--blanco);
-}
-
-header h1 {
+    
+} header h1 {
     padding-top: 1rem;
     padding-left: 2rem;
 
-    border-left: 1px solid var(--blanco);
-    border-top: 1px solid var(--blanco);
-    border-right: 1px solid var(--blanco);
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+
+    border-left: 2px solid var(--negro);
+    border-right: 2px solid var(--negro);
 
     background-color: var(--fondo-header);
 }
@@ -46,21 +55,29 @@ header nav {
     padding: 0.5rem;
     width: 100%;
     
-    border: 1px solid var(--blanco);
-
+    border: 1px solid var(--negro);
+    border-bottom: 2px solid var(--negro);
+    
     text-align: center;
     text-decoration: none;
     color: var(--blanco);
-} header nav .main {
-    border-top: 0;
-    border-bottom: 2px solid var(--blanco);
-    background-color: var(--fondo-header);
+
+    transition: 0.5;
 } header nav .sec {
     background-color: var(--fondo-header-sec);
 } header nav :first-child {
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 1.8rem;
+    border-bottom: 2px solid var(--negro);
+    border-left: 2px solid var(--negro);
 } header nav :last-child {
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 1.8rem;
+    border-bottom: 2px solid var(--negro);
+    border-right: 2px solid var(--negro);
+} header nav .main {
+    border: 2px solid var(--blanco);
+    background-color: var(--fondo-header);
+} header nav a:hover {
+    border: 2px solid var(--blanco-sec);
 }
 
 body {
@@ -69,16 +86,19 @@ body {
     line-height: 2;
 
     background-color: var(--fondo-body);
-}
-body main {
-    margin: 3rem;
-    margin-top: 4rem;
-
-    height: 30rem;
+} body #first {
+    margin-top: 15rem;
+} body main {
+    margin: 4rem;
+    height: 60rem;
 
     border: 2px solid var(--blanco);
     border-radius: 0.8rem;
+
+    color: var(--blanco);
     background-color: var(--fondo-body-sec);
+} body main p {
+    padding: 2rem;
 }
 
 
