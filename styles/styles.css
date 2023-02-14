@@ -2,7 +2,7 @@
     --fuenteHeading: 'Courier New', Courier, monospace;
     --fuenteParrafos: 'Courier New', Courier, monospace;
 
-    --fondo-body: #6c6c6c;
+    --fondo-body: #868686;
     --fondo-body-sec: #232323;
     --fondo-header: #232323;
     --fondo-header-sec: #1a1a1a;
@@ -92,7 +92,7 @@ body {
     margin: 4rem;
     height: 60rem;
 
-    border: 2px solid var(--blanco);
+    border: 3px solid var(--negro);
     border-radius: 0.8rem;
 
     color: var(--blanco);
