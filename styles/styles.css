@@ -42,8 +42,8 @@ header {
     font-size: 2.5rem;
     letter-spacing: 0.3rem;
 
-    border-left: 2px solid var(--fondo-header);
-    border-right: 2px solid var(--fondo-header);
+    border-left: 2px solid var(--fondo-body);
+    border-right: 2px solid var(--fondo-body);
 
     background-color: var(--fondo-header);
 }
@@ -52,31 +52,32 @@ header {
 header nav {
     display: flex;
     justify-content: space-around;
+} header nav .sec {
+    background-color: var(--fondo-header-sec);
+} header nav :first-child {
+    border-bottom-left-radius: 1.8rem;
+    border-bottom: 2px solid var(--fondo-body);
+    border-left: 2px solid var(--fondo-body);
+} header nav :last-child {
+    border-bottom-right-radius: 1.8rem;
+    border-bottom: 2px solid var(--fondo-body);
+    border-right: 2px solid var(--fondo-body);
+} header nav .main {
+    border: 2px solid var(--fondo-header);
+    border: 2px solid var(--blanco-sec);    
+    background-color: var(--fondo-header);
 } header nav a {
     padding: 0.5rem;
     width: 100%;
     
     border: 1px solid var(--negro);
-    border-bottom: 2px solid var(--negro);
+    border-bottom: 2px solid var(--fondo-body);
     
     text-align: center;
     text-decoration: none;
     color: var(--blanco);
 
-    transition: 0.5;
-} header nav .sec {
-    background-color: var(--fondo-header-sec);
-} header nav :first-child {
-    border-bottom-left-radius: 1.8rem;
-    border-bottom: 2px solid var(--negro);
-    border-left: 2px solid var(--negro);
-} header nav :last-child {
-    border-bottom-right-radius: 1.8rem;
-    border-bottom: 2px solid var(--negro);
-    border-right: 2px solid var(--negro);
-} header nav .main {
-    border: 2px solid var(--fondo-header);
-    background-color: var(--fondo-header);
+    transition: hover 2s border;
 } header nav a:hover {
     border: 2px solid var(--blanco-sec);
 }
@@ -108,17 +109,22 @@ body #first {
     color: var(--blanco);
     background-color: var(--fondo-body-sec);
 } body main div {
-    height: 96%;
-    width: 49%;
+    height: 97%;
+    width: 98%;
     margin: 1rem;
 
     border-radius: 0.8rem;
     border: 1px solid var(--blanco);
+
+    padding: 1rem;
 } body main div:nth-child(1){
     background-color: var(--fondo-main);
 } body main div:nth-child(2){
-    background-color: var(--blanco);
-    color: var(--negro);
+    background-color: var(--fondo-header-sec);
+    color: var(--blanco);
+} body main div img {
+    width: 100%;
+    border-radius: 0.8rem;
 }
 
 
