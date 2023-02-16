@@ -84,6 +84,7 @@ header nav {
 
 /* ESTILO BODY */
 body {
+
     font-family: var(--fuenteParrafos);
     font-size: 1.6rem;
     line-height: 2;
@@ -92,12 +93,14 @@ body {
 } 
 
 /* ESTILO MAIN */
-body #first {
+body .first {
     margin-top: 15rem;
+} body .first .first-div {
+    width: 100%;
 } body main {
 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
     margin: 4rem;
@@ -110,16 +113,17 @@ body #first {
     background-color: var(--fondo-body-sec);
 } body main div {
     height: 97%;
-    width: 98%;
-    margin: 1rem;
+    margin: 0.5rem;
 
     border-radius: 0.8rem;
     border: 1px solid var(--blanco);
 
     padding: 1rem;
 } body main div:nth-child(1){
+    width: 70%;
     background-color: var(--fondo-main);
 } body main div:nth-child(2){
+    width: 100%;
     background-color: var(--fondo-header-sec);
     color: var(--blanco);
 } body main div img {
