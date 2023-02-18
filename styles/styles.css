@@ -2,7 +2,7 @@
     --fuenteHeading: 'Courier New', Courier, monospace;
     --fuenteParrafos: 'Courier New', Courier, monospace;
 
-    --fondo-body: #ececec;
+    --fondo-body: #6a6a6a;
     --fondo-body-sec: #232323;
     --fondo-main: #1a1a1a;
     --fondo-header: #232323;
@@ -34,19 +34,7 @@ header {
     font-family: var(--fuenteHeading);
     color: var(--blanco);
     
-} header h1 {
-    padding-top: 1rem;
-    padding-left: 2rem;
-
-    text-align: center;
-    font-size: 2.5rem;
-    letter-spacing: 0.3rem;
-
-    border-left: 2px solid var(--fondo-body);
-    border-right: 2px solid var(--fondo-body);
-
-    background-color: var(--fondo-header);
-}
+} 
 
 /* NAV STYLE */
 header nav {
@@ -92,43 +80,73 @@ body {
     background-color: var(--fondo-body);
 } 
 
-/* ESTILO MAIN */
-body .first {
-    margin-top: 15rem;
-} body .first .first-div {
-    width: 100%;
-} body main {
+body main {
 
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
 
-    margin: 4rem;
-    height: 60rem;
-
-    border: 3px solid var(--negro);
-    border-radius: 0.8rem;
-
-    color: var(--blanco);
-    background-color: var(--fondo-body-sec);
-} body main div {
-    height: 97%;
-    margin: 0.5rem;
-
-    border-radius: 0.8rem;
-    border: 1px solid var(--blanco);
-
-    padding: 1rem;
-} body main div:nth-child(1){
-    width: 70%;
-    background-color: var(--fondo-main);
-} body main div:nth-child(2){
-    width: 100%;
-    background-color: var(--fondo-header-sec);
-    color: var(--blanco);
-} body main div img {
-    width: 100%;
-    border-radius: 0.8rem;
+    background-color: var(--fondo-body);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
+body main article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
 
+    margin: 4rem;
+
+    color: var(--blanco);
+    background-color: var(--fondo-main);
+    border-radius: 1.8rem;
+    padding: 1rem;
+}
+
+body main article div {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid var(--blanco);
+    border-radius: 1.2rem;
+    width: 100%;
+}
+
+body main article>* {
+    padding: 1rem;
+    border: 1px solid var(--blanco);
+}
+
+body main article .article_img {
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1.2rem;
+}
+
+footer {    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: var(--fondo-main);
+    color: var(--blanco);
+    padding: 0.5rem;
+
+} footer a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+#python {
+    width: 50%;
+}
